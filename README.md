@@ -58,11 +58,13 @@ PostgreSQL Driver
 
 
 📂 Estructura del Proyecto
+
 crud-spring-boot-postgres/
 │
 ├── src/main/java/com/crud_estudiantes/
 
 │   ├── controller/           # Controladores REST
+
 │   │   └── EstudianteController.java
 
 │   ├── entity/               # Entidades JPA
@@ -80,6 +82,7 @@ crud-spring-boot-postgres/
 │   └── CrudEstudiantesApplication.java  # Clase principal
 
 │
+
 ├── src/main/resources/
 
 │   ├── application.properties # Configuración de la app
@@ -123,13 +126,13 @@ POST	/estudiante	Crear nuevo estudiante
 PUT	/estudiante	Actualizar estudiante existente
 
 DELETE	/estudiante/{id}	Eliminar estudiante por ID
-
-ID
 🧪 Pruebas con Postman
+
 1. Crear Estudiante (POST)
    
 json
 Copy
+
 {
   "nombres": "Joel Hernan",
 
@@ -144,14 +147,17 @@ Copy
   "fecha_nacimiento": "1998-12-09"
   
 }
+
 Respuesta esperada: 201 Created
 
 3. Listar Estudiantes (GET)
+
 Endpoint: GET http://localhost:8080/estudiante
 
-4. Actualizar Estudiante (PUT)
+5. Actualizar Estudiante (PUT)
 json
 Copy
+
 {
   "codigo": 1,
 
@@ -168,6 +174,7 @@ Copy
   "fecha_nacimiento": "1998-12-09"
   
 }
+
 Respuesta esperada: 200 OK
 
 6. Eliminar Estudiante (DELETE)
@@ -177,6 +184,7 @@ Endpoint: DELETE http://localhost:8080/estudiante/1
 Respuesta esperada: 204 No Content
 
 📄 Licencia
+
 Este proyecto está bajo la licencia MIT. Ver el archivo LICENSE para más detalles.
 
 👨‍💻 Desarrollado por: Joel Hernan Tancara Suñagua
